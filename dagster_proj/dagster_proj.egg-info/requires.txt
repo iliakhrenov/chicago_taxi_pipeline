@@ -4,3 +4,5 @@ dagster-cloud
 [dev]
 dagit
 pytest
+pandas
+sodapy

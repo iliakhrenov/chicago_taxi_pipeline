@@ -4,6 +4,7 @@ setup.cfg
 setup.py
 dagster_proj/__init__.py
 dagster_proj/assets.py
+dagster_proj/chicago_taxi.py
 dagster_proj.egg-info/PKG-INFO
 dagster_proj.egg-info/SOURCES.txt
 dagster_proj.egg-info/dependency_links.txt
