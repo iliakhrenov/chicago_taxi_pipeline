@@ -6,3 +6,7 @@ dagit
 pytest
 pandas
 sodapy
+google-cloud-storage
+google-cloud-bigquery
+google-auth
+pandas-gbq

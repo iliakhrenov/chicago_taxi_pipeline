@@ -1,6 +1,22 @@
 temp_taxi/
-tmpsk5u_l6b/
 __pycache__/
 *.py[cod]
-eda.py
 
+# Exploration
+eda.py
+eda_to_bq.py
+
+# Dagster temporary directories
+tmp*/
+
+# Dagster instance data
+.logs_queue/
+.telemetry/
+.nux/
+.DS_Store
+logs/
+history/
+schedules/
+
+# Creds
+gcp_creds.json

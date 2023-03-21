@@ -7,5 +7,16 @@ setup(
         "dagster",
         "dagster-cloud"
     ],
-    extras_require={"dev": ["dagit", "pytest", "pandas", "sodapy"]},
+    extras_require={
+    "dev": [
+        "dagit", 
+        "pytest", 
+        "pandas", 
+        "sodapy",
+        "google-cloud-storage",
+        'google-cloud-bigquery',
+        'google-auth',
+        'pandas-gbq'
+        ]
+    },
 )
