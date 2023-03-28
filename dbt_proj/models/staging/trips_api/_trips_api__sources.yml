@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: trips_api
+    database: horizons-learning  
+    schema: chicago_taxi
+    tables:
+      - name: raw_trips

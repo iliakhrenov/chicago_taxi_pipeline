@@ -18,5 +18,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_proj:
-    example:
+    staging:
+      schema: staging
+      database: horizons-learning
       +materialized: view
