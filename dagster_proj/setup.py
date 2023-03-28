@@ -16,7 +16,8 @@ setup(
         "google-cloud-storage",
         'google-cloud-bigquery',
         'google-auth',
-        'pandas-gbq'
+        'pandas-gbq',
+        'dbt-bigquery'
         ]
     },
 )

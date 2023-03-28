@@ -21,3 +21,6 @@ storage/
 
 # Creds
 gcp_creds.json
+
+# dbt boilerplate
+example/
