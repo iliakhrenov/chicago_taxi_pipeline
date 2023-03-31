@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: stg_trips_api__raw_trips
+    columns:
+      - name: trip_id
+        data_type: STRING
+        description: The id of a trip, primary key
+      - name: taxi_id
+        data_type: STRING
+        description: The id of a taxi car
+      - name: trip_start_dt
+        data_type: DATETIME
+        description: Start trip timestamp
+      - name: trip_end_dt
+        data_type: DATETIME
+        description: Start end timestamp
+      - name: trip_duration_seconds
+        data_type: FLOAT64
+        description: Duration of the trip, in seconds
+      - name: pickup_community_area
+        data_type: FLOAT64
+        description: The Community Area where the trip began. This column will be blank for locations outside Chicago.
+      - name: dropoff_community_area
+        data_type: FLOAT64
+        description: The Community Area where the trip ended. This column will be blank for locations outside Chicago.
+      - name: fare_usd
+        data_type: FLOAT64
+        description: The Fare for the trip in USD
+      - name: tips_usd
+        data_type: FLOAT64
+        description: The tip for the trip in USD. Cash tips generally will not be recorded.
+      - name: tolls_usd
+        data_type: FLOAT64
+        description: The tolls for the trip in USD.
+      - name: extra_charges_usd
+        data_type: FLOAT64
+        description: Extra charges for the trip in USD.
+      - name: trip_total_cost_usd
+        data_type: FLOAT64
+        description: Total cost of the trip in USD.
+      - name: payment_type
+        data_type: STRING
+        description: Type of payment for the trip.
+      - name: taxi_company
+        data_type: STRING
+        description: The taxi company.
+      - name: pickup_centroid_latitude
+        data_type: FLOAT64
+        description: The latitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
+      - name: pickup_centroid_longitude
+        data_type: FLOAT64
+        description: The longitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
+      - name: dropoff_centroid_latitude
+        data_type: FLOAT64
+        description: The latitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
+      - name: dropoff_centroid_longitude
+        data_type: FLOAT64
+        description: The longitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy. This column often will be blank for locations outside Chicago.
+      - name: pickup_census_tract
+        data_type: STRING
+        description: The Census Tract where the trip began. For privacy, this Census Tract is not shown for some trips.
+      - name: dropoff_census_tract
+        data_type: STRING
+        description: The Census Tract where the trip began. For privacy, this Census Tract is not shown for some trips.
